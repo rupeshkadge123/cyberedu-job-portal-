@@ -4,4 +4,25 @@
   <welcome-file-list>
     <welcome-file>applogin.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>view</display-name>
+    <servlet-name>view</servlet-name>
+    <servlet-class>com.cedu.users.view</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>view</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AppliedJob</display-name>
+    <servlet-name>AppliedJob</servlet-name>
+    <servlet-class>com.cedu.users.AppliedJob</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppliedJob</servlet-name>
+    <url-pattern>/AppliedJob</url-pattern>
+  </servlet-mapping>
+  
 </web-app>

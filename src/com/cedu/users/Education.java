@@ -36,7 +36,7 @@ public class Education extends HttpServlet {
 			ps.setString(5,request.getParameter("grade"));
 			ps.executeUpdate();
 			System.out.println("database successfully entered");
-			RequestDispatcher rd=request.getRequestDispatcher("stuProfile.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("stueducational.jsp");
 			rd.forward(request, response);
 			con.close();
 			ps.close();

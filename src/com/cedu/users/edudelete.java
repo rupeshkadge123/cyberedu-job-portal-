@@ -34,11 +34,11 @@ public class edudelete extends HttpServlet
 		  rs= ps.executeUpdate();
 		  System.out.println(rs);
 		   if(rs > 0){
-			   RequestDispatcher rd=request.getRequestDispatcher("stuProfile.jsp");
+			   RequestDispatcher rd=request.getRequestDispatcher("stueducational.jsp");
 			   rd.forward(request, response);
 		   }
 			   else{
-				   RequestDispatcher rd=request.getRequestDispatcher("stuProfile.jsp");
+				   RequestDispatcher rd=request.getRequestDispatcher("stueducational.jsp");
 				    
 				   System.out.println("Record can not be deleted");
 				   rd.forward(request, response);

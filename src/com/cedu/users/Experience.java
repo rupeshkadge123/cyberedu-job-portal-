@@ -46,7 +46,7 @@ public class Experience extends HttpServlet {
 			ps.executeUpdate();
 			System.out.println("Experience add successfully");
 			
-			RequestDispatcher rd=request.getRequestDispatcher("stuProfile.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("stuexperience.jsp");
 			rd.forward(request, response);
 			con.close();
 			ps.close();

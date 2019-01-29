@@ -99,7 +99,7 @@ public void doPost(HttpServletRequest request, HttpServletResponse response)
 			}
 				
 			} else {
-				RequestDispatcher rd1 = request.getRequestDispatcher("applogin.jsp");
+				RequestDispatcher rd1 = request.getRequestDispatcher("admLogin.jsp");
 				request.setAttribute("error","Invalid Email or Password" ); 
 				rd1.include(request, response);
 				System.out.println("login failed");

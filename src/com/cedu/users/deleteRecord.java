@@ -42,11 +42,11 @@ public class deleteRecord extends HttpServlet
 		  rs= ps.executeUpdate();
 		  System.out.println(rs);
 		   if(rs > 0){
-			   RequestDispatcher rd=request.getRequestDispatcher("stuProfile.jsp");
+			   RequestDispatcher rd=request.getRequestDispatcher("stuexperience.jsp");
 			   rd.forward(request, response);
 		   }
 		   else{
-			   RequestDispatcher rd=request.getRequestDispatcher("stuProfile.jsp");
+			   RequestDispatcher rd=request.getRequestDispatcher("stuexperience.jsp");
 			    
 			   pw.println("Record can not be deleted");
 			   rd.forward(request, response);

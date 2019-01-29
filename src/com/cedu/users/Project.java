@@ -40,7 +40,7 @@ public class Project extends HttpServlet {
 		
 			ps.executeUpdate();
 			System.out.println("database successfully entered");
-			RequestDispatcher rd=request.getRequestDispatcher("stuProfile.jsp");
+			RequestDispatcher rd=request.getRequestDispatcher("stuproject.jsp");
 			rd.forward(request, response);
 			con.close();
 			ps.close();

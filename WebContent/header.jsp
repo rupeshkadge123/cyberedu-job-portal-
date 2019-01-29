@@ -7,6 +7,9 @@
 <%@ page import="java.sql.DriverManager"%>
 <%@ page import="java.sql.SQLException"%>
 <%@ page import="java.sql.Statement"%>
+<%@ page import="java.util.*"%>
+<%@ page import="java.sql.*"%>
+<%@ page import="com.connection.manager.ConnectionManager"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -66,6 +69,7 @@
 	if (session.getAttribute("usremailInSession")==null) {
 		session.invalidate();
 		session.setMaxInactiveInterval(0);
+		
 		  
 		//changing the maximum age to 0 seconds  
 		
@@ -156,13 +160,13 @@
           <ul class="treeview-menu">
             <li><a href="stuProfile.jsp"><i class="fa fa-user"></i>
                 Personal</a></li>
-            <li><a href="stuProfile.jsp"><i class="fa fa-mortar-board "></i>
+            <li><a href="stueducational.jsp"><i class="fa fa-mortar-board "></i>
                 Educational</a></li>
-            <li><a href="sstuProfile.jsp"><i class="fa fa-paper-plane-o"></i>
+            <li><a href="stuexperience.jsp"><i class="fa fa-paper-plane-o"></i>
                 Exprience</a></li>
             <li><a href="stuProfile.jsp"><i
                 class="fa  fa-book "></i> Cources</a></li>
-            <li><a href="stuProfile.jsp"><i
+            <li><a href="stuproject.jsp"><i
                 class="fa fa-folder-open-o"></i> Projects</a></li>
             <li><a href="stuProfile.jsp"><i
                 class="fa  fa-university"></i> Skills</a></li>
@@ -176,11 +180,11 @@
           <ul class="treeview-menu">
             <li><a href="stuJob.jsp"><i
                 class="fa fa-circle-o"></i> Listed jobs</a></li>
-            <li><a href="stuJob.jsp"><i
+            <li><a href="stuJobApplied.jsp"><i
                 class="fa fa-circle-o"></i> Applied Job</a></li>
-            <li><a href="stuJob.jsp"><i
+            <li><a href="stuJobCallLetter.jsp"><i
                 class="fa fa-circle-o"></i> Call Letter</a></li>
-            <li><a href="stuJob.jsp"><i
+            <li><a href="stuJobRecruters.jsp"><i
                 class="fa fa-circle-o"></i> Recruiters</a></li>
           </ul></li>
         <li class="treeview">

@@ -1,5 +1,6 @@
 
 <%@include file="header.jsp"%>
+
 <div class="content-wrapper">
 	<div class="container">
 		<div class="row col-md-12">
@@ -8,16 +9,19 @@
 			<!-- Custom Tabs -->
 			<div class="nav-tabs-custom">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="admListedCompany.jsp">listed
-							job</a></li>
-					<li><a href="admApplied.jsp">Applied job</a></li>
+
+					<li class="active"><a href="stuJob.jsp">Listed</a></li>
+					<li><a href="stuJobApplied.jsp">Applied</a></li>
+					<li><a href="stuJobCallLetter.jsp">Call Letter</a></li>
+					<li><a href="stuJobRecruters.jsp">Recruiters</a></li>
 				</ul>
+
 				<div class="tab-pane" id="tab_2">
 					<div class="tab-content">
 						<div class="tab-pane active">
 							<!-- profile -->
 							<section class="Content">
-								<form action="view.jsp" method="post">
+								<form action="view" method="post">
 									<div class="box box-default">
 										<div class="box-header">
 											<h3 class="box-title">Currently Available Jobs</h3>
@@ -49,19 +53,15 @@
 															<td>${row.skill}</td>
 															<td>${row.experience}</td>
 															<td>${row.vaccancies}</td>
-															
 															<td>
-																<button type="submit" value="${row.jobid}" name="jobid123"
-																	class="btn btn-block btn-danger btn-sm">
-																<i class="fa  fa-trash-o"></i>
-															</button></td>
-															
+																<button type="submit" value="${row.jobid}"
+																	name="jobid123" class="btn btn-block btn-primary">
+																	View Company</button>
+															</td>
+
 														</tr>
 													</tbody>
 												</c:forEach>
-
-
-
 
 											</table>
 										</div>
@@ -83,11 +83,6 @@
 					</div>
 				</div>
 
-
-
-
-
-
 			</div>
 			<!-- /.tab-content -->
 		</div>
@@ -102,3 +97,12 @@
 
 
 <%@include file="footer.jsp"%>
+
+
+
+
+
+
+
+
+

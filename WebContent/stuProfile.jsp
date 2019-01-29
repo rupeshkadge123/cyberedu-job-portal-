@@ -1,8 +1,6 @@
 <!--  -->
 <%@include file="header.jsp"%>
-<%@ page import="java.util.*"%>
-<%@ page import="java.sql.*"%>
-<%@ page import="com.connection.manager.ConnectionManager"%>
+
 <!--  -->
 <div class="content-wrapper">
 	<div class="container">
@@ -13,9 +11,9 @@
 			<div class="nav-tabs-custom">
 				<ul class="nav nav-tabs">
 					<li class="active"><a href="#tab_1" data-toggle="tab">Personal</a></li>
-					<li><a href="#tab_2" data-toggle="tab">Educational</a></li>
-					<li><a href="#tab_3" data-toggle="tab">Experience</a></li>
-					<li><a href="#tab_4" data-toggle="tab">Project</a></li>
+					<li><a href="stueducational.jsp" >Educational</a></li>
+					<li><a href="stuexperience.jsp">Experience</a></li>
+					<li><a href="stuproject.jsp">Project</a></li>
 
 				</ul>
 				<div class="tab-content">
@@ -174,7 +172,7 @@
 					</div>
 					<!-- /.tab-pane -->
 
-					<div class="tab-pane" id="tab_2">
+					<%-- <div class="tab-pane" id="tab_2">
 						<!-- educational Details -->
 						
 							<section class="content">
@@ -298,10 +296,10 @@
 							</section>
 							<!-- educational Details -->
 						
-					</div>
+					</div> --%>
 <!-- ************************************************************************* -->
 					<!-- /.tab-pane -->
-					<div class="tab-pane" id="tab_3">
+				<%-- 	<div class="tab-pane" id="tab_3">
 						<!-- Experieance -->
 						<section class="content">
 							<div class="box box-default">
@@ -489,8 +487,8 @@
 
 
 					</div>
-					<!-- /.tab-pane -->
-					<div class="tab-pane" id="tab_4">
+					<!-- /.tab-pane --> --%>
+					<%-- <div class="tab-pane" id="tab_4">
 						<!-- -->
 
 						<section class="content">
@@ -620,7 +618,7 @@
 						</section>
 						<!-- Project -->
 					</div>
-					<!-- /.tab-pane -->
+					<!-- /.tab-pane --> --%>
 				</div>
 				<!-- /.tab-content -->
 			</div>

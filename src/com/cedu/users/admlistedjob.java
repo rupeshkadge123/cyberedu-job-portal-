@@ -24,9 +24,9 @@ public class admlistedjob extends HttpServlet {
 		try {
 			Connection con = ConnectionManager.getConnection();
 			PreparedStatement ps = con.prepareStatement(
-					"INSERT INTO admlistedjob SELECT jobid,jtitle,cname,"
-					+ "skill,experience,vaccancies FROM "
-					+ "cyberedudb.listedjob WHERE jobid=?");
+					"INSERT INTO cyberedu.admlistedjob SELECT jobid,jtitle,cname,"
+					+ "skill,experience,vaccancies FROM"
+					+ " cyberedu.listedjob WHERE jobid=?");
 			ps.setString(1, jobid123);
         
 			ps.executeUpdate();

@@ -26,7 +26,7 @@ public class logout extends HttpServlet {
 		HttpSession session=request.getSession();
 		session.setMaxInactiveInterval(0);
 		session.invalidate();
-		RequestDispatcher rd=request.getRequestDispatcher("applogin.jsp");
+		RequestDispatcher rd=request.getRequestDispatcher("admLogin.jsp");
 		rd.forward(request, response);
 	}
 

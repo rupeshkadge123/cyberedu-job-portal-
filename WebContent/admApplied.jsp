@@ -25,7 +25,10 @@
 									</div>
 									<!-- /.box-header -->
 									<sql:query dataSource="${webappDataSource}" var="result">
-						          select * from studexperience;
+						          
+select stu.firstname,stu.lastname,stu.email,ap.cname,ap.appliedjobid,
+						ap.jtitle,ap.experience,ap.skill
+                        FROM cyberedu.studregistration stu , cyberedu.appliedjob ap where stu.userid=ap.userid;;
 				          		</sql:query>
 									
 									<div class="box-body">
@@ -33,12 +36,14 @@
 											class="table table-bordered table-striped">
 											<thead>
 												<tr>
-												    <th>experienceid</th>
-													<th>jobtitle</th>
-													<th>company name</th>
-													<th>company domain</th>
-													<th>skill</th>
-													<th>Experience</th>
+												    <th>First Name</th>
+												<th>Last Name</th>
+												<th>Email</th>
+												<th>Company Name</th>
+												<th>Job Title</th>
+												<th>Experience</th>
+												<th>Skill</th>
+												<th></th>
 												
 
 
@@ -50,12 +55,14 @@
 												<tbody>
 													<tr>
 										                 
-														<td>${row.expid}</td>
-														<td>${row.jobtitle}</td>
-														<td>${row.companyname}</td>
-                                                        <td>${row.companydomain}</td>
-                                                        <td>${row.skill}</td>
-														<td>${row.yearofexperience}</td>
+														<td>${row.firstname}</td>
+													<td>${row.lastname}</td>
+													<td>${row.email}</td>
+													<td>${row.cname}</td>
+													<td>${row.jtitle}</td>
+													<td>${row.experience}</td>
+													<td>${row.skill}  </td>
+
 													
 																											</tr>
 												

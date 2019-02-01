@@ -43,12 +43,16 @@
 
     <form action="log" method="post">
       <div class="form-group">
-        <input type="text" class="form-control" placeholder="userid" name="email">
+        <input type="text" class="form-control" placeholder="userid" id="firstname" name="email">
+         <span id="firsterror"></span>
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+       
       </div>
       <div class="form-group">
-        <input type="password" class="form-control" placeholder="password" name="pass">
+        <input type="password" class="form-control" id="middlename" placeholder="password" name="pass">
+       <span id="middleerror"></span>
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+        
       </div>
       <div class="row">
         <div class="col-xs-8">
@@ -93,6 +97,26 @@
       increaseArea: '20%' /* optional */
     });
   });
+  
+</script>
+<script type="text/javascript">
+	function validatation(){
+		var name = document.getElementById('firstname').value;
+		var mname = document.getElementById('middlename').value;
+
+		if(name ==""){
+			document.getElementById('firsterror').innerHTML ="please enter value";
+			return false;
+		}
+		
+		if(mname ==""){
+			document.getElementById('middleerror').innerHTML ="please enter value";
+			return false;
+		}else{
+			document.getElementById('middleerror').innerHTML ="successfully taken";
+			return false;
+		}
+	}
 </script>
 </body>
 </html>

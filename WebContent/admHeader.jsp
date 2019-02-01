@@ -34,14 +34,15 @@
 	href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 <link rel="stylesheet"
 	href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-	
+
 <!-- DataTables -->
-  <link rel="stylesheet" href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+<link rel="stylesheet"
+	href="bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
 </head>
 
 
 <script src="bower_components/fastclick/lib/fastclick.js"></script>
-	
+
 
 
 <body class="hold-transition skin-blue sisdebar-mini">
@@ -53,119 +54,93 @@
 	<%@include file="connection.jsp"%>
 	<%
 		Integer useridheder1 = (Integer) session.getAttribute("usridInSession1");
+	String admemail = (String) session.getAttribute("usremailInSession");
+	
+	%> <%
+		if (useridheder1 == null)
+			response.sendRedirect(request.getContextPath() + "/admLogin.jsp");
+	%> 
+
+	
+	<%
+	if (session.getAttribute("usremailInSession")==null) {
+		session.invalidate();
+		session.setMaxInactiveInterval(0);
 		
+		  
+		//changing the maximum age to 0 seconds  
+		
+		RequestDispatcher rd=request.getRequestDispatcher("admLogin.jsp");
+		rd.forward(request, response);
+		}
 	%>
+
+
 	
 
-	<div class="wrapper">
-
 		<header class="main-header">
-			<!-- Logo -->
-			<a href="stuDashboard.jsp" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
-				<span class="logo-mini"><b>C</b>D</span> <!-- logo for regular state and mobile devices -->
-				<span class="logo-lg"><b>Cyber</b>Droid</span>
-			</a>
-			<nav class="navbar navbar-static-top">
+    <!-- Logo -->
+    <a href="index2.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>C</b>D</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">CyberDroid</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
 
-				<a href="#" class="sidebar-toggle" data-toggle="push-menu"
-					role="button"> <span class="sr-only">Toggle navigation</span>
-				</a>
-						
-				<div class="navbar-custom-menu">
-					<ul class="nav navbar-nav">
-						<li class="dropdown user user-menu">
-						<a href="#"	class="dropdown-toggle" data-toggle="dropdown"> 
-						<img src="dist/img/user2-160x160.jpg" class="user-image"
-						alt="User Image"> <span class="hidden-xs">Amruta</span></a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-	</div>
-	<!-- Left side column. contains the logo and sidebar -->
-	<aside class="main-sidebar">
-		<section class="sidebar">
-			
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+         
+          <!-- Notifications: style can be found in dropdown.less -->
+          
+          <!-- Tasks: style can be found in dropdown.less -->
+          
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs"><%=admemail%></span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
-			<ul class="sidebar-menu" data-widget="tree">
-				<li class="header">MAIN NAVIGATION</li>
-				
-				
-
-				 <li><a href="admDashboard.jsp"> 
-				 	<i	class="fa  fa-edit "></i>
-				 		<span> Dashboard</span> 
-					</a>
-				</li>
-				<li class="treeview"><a href="admStudent.jsp">
-				 <i
-						class="fa fa-briefcase"></i> <span>Student</span> <i
-						class="fa fa-angle-left pull-right"></i>
-				</a>
-					<ul class="treeview-menu">
-						<li><a href="admStudent.jsp"><i
-					
-								class="fa fa-circle-o"></i> Student</a></li>
-						
-					</ul></li>
-					
-					<li class="treeview"><a href="admListedCompany.jsp"> <i
-						class="fa fa-briefcase"></i> <span>Job</span> <i
-						class="fa fa-angle-left pull-right"></i>
-				</a>
-					<ul class="treeview-menu">
-					<li><a href="admListedCompany.jsp"><i
-				
-								class="fa fa-circle-o"></i> listed job</a></li>
-						
-						<li><a href="admApplied.jsp"><i
-				
-								class="fa fa-circle-o"></i>Applied job</a></li>
-						
-					</ul></li>
-				
-					<li class="treeview"><a href="admRecurters.jsp"> <i
-						class="fa fa-briefcase"></i> <span>recurters</span> <i
-						class="fa fa-angle-left pull-right"></i>
-				</a>
-					<ul class="treeview-menu">
-			
-					
-					
-						<li><a href="admRecurters.jsp"><i
-								class="fa fa-circle-o"></i> Admin recurters</a></li>
-						
-					</ul></li>
-				<li class="treeview">
-					<a href="#"> 
-						<i	class="fa  fa-envelope"></i> <span>Mailbox</span> 
-						<i class="fa fa-angle-left pull-right"></i>
-					</a>
-					<ul class="treeview-menu">
-						<li><a href="admMail.jsp"><i
-								class="fa fa-circle-o"></i> inbox</a></li>
-								<li><a href="admMailCompose.jsp"><i
-								class="fa fa-circle-o"></i> compose</a></li>
-								
-						<li><a href="admMailRead.jsp"><i
-								class="fa fa-circle-o"></i> read</a></li>
-								
-						
-						
-								
-								
-						
-								
-						
-					</ul></li>
-						
-					
-						
-					
-				
-				
-				
-			</ul>
-		</section>
-	</aside>
+              </li>
+              <!-- Menu Body -->
+              
+              <!-- Menu Footer-->
+             
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                 <form action="logout" method="post">
+                <div class="pull-right">
+                  <input type="submit" value="Sign out"class="btn btn-default btn-flat">
+                </div>
+                </form>
+              </li>
+              
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+         
+        </ul>
+      </div>
+    </nav>
+  </header>
+		
+		
+		
+		
+		
+		
+		
+	

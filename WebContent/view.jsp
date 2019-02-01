@@ -306,3 +306,4 @@
 		</div>
 	</div>
 </div>
+<%@include file="Stufooter.jsp"%>

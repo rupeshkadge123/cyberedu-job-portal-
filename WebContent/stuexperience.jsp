@@ -28,6 +28,7 @@
 									<div class="form-group">
 										<!--open- col-md-12 -->
 										<form action="Experience" method="post">
+										
 											<input type="hidden" value="<%=useridheder%>" name="userid">
 											<div class="row col-md-12">
 												<div class="col-md-4">
@@ -52,7 +53,8 @@
 												<div class="col-md-4">
 													<label>Year of Experience</label> <select
 														class="form-control select2"
-														placeholder="Year of Experience" name="yfexp">
+														 name="yfexp">
+														<option>Year of Experience</option>
 														<option>Exp 1-3 year</option>
 														<option>Exp 4-6 year</option>
 														<option>Exp 7-7 year</option>
@@ -67,7 +69,8 @@
 												<div class="col-md-4">
 													<label>CTC of Current Company </label> <select
 														class="form-control select2"
-														placeholder="CTC of Current Company" name="ctcofcurcomp">
+														 name="ctcofcurcomp">
+														<option>CTC of Current Company</option>
 														<option>1-2 LPA</option>
 														<option>3-5 LPA</option>
 														<option>6-8 LPA</option>
@@ -101,8 +104,9 @@
 
 												<div class="col-md-4">
 													<label>Technology Used</label> <select
-														class="form-control select2" placeholder="Technology Used"
+														class="form-control select2" 
 														name="techused">
+														<option>Technology Used</option>
 														<option>Java</option>
 														<option>PHP</option>
 														<option>.NET</option>
@@ -223,7 +227,7 @@
 
 
 
-<%@include file="footer.jsp"%>
+<%@include file="Stufooter.jsp"%>
 
 
 

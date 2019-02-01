@@ -73,7 +73,7 @@
     </section>
     </div>
     
-<%@include file="footer.jsp"%>
+<%@include file="Stufooter.jsp"%>
     
 
     

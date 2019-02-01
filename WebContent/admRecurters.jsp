@@ -8,9 +8,9 @@
 			<div class="nav-tabs-custom">
 				<ul class="nav nav-tabs">
 
-					<li class="active"><a href="admRecurters.jsp">Admin
-							recurters</a></li>
-					<li><a href="postJob.jsp">Student</a></li>
+					<li class="active"><a href="admRecurters.jsp">List of
+							Companies</a></li>
+					<li><a href="postJob.jsp">Recruiters Entry </a></li>
 
 				</ul>
 				<div class="tab-pane" id="tab_2">
@@ -19,9 +19,6 @@
 							<!-- profile -->
 							<section class="Content">
 								<div class="box box-default">
-									<div class="box-header">
-										<h3 class="box-title">Currently Available Jobs</h3>
-									</div>
 
 									<!-- /.box-header -->
 									<form action="admlistedjob" method="post">
@@ -29,7 +26,8 @@
 											<sql:query dataSource="${webappDataSource}" var="result">
 						          select * from listedjob;
 				          		</sql:query>
-											<table id="example" class="table table-bordered table-striped">
+											<table id="example"
+												class="table table-bordered table-striped">
 
 												<thead>
 													<tr>
@@ -38,26 +36,27 @@
 														<th>skill</th>
 														<th>Experience</th>
 														<th>Vaccancies</th>
-														<th> </th>
+														<th></th>
 													</tr>
 												</thead>
 												<c:forEach var="row1" items="${result.rows}">
-												<tbody>
-													<tr>
-														<td>${row1.jtitle}</td>
-														<td>${row1.cname}</td>
-														<td>${row1.skill}</td>
-														<td>${row1.experience}</td>
-														<td>${row1.vaccancies}</td>
-														
-														
-														<td><button type="submit" value="${row1.jobid}" name="jid" class="btn btn-block btn-success btn-sm">
-																
-															Allow</button></td>
-													</tr>
-												</tbody>
-											</c:forEach>
-												
+													<tbody>
+														<tr>
+															<td>${row1.jtitle}</td>
+															<td>${row1.cname}</td>
+															<td>${row1.skill}</td>
+															<td>${row1.experience}</td>
+															<td>${row1.vaccancies}</td>
+
+
+															<td><button type="submit" value="${row1.jobid}"
+																	name="jid" class="btn btn-block btn-success btn-sm">
+
+																	Allow</button></td>
+														</tr>
+													</tbody>
+												</c:forEach>
+
 											</table>
 										</div>
 										<!-- /.box-body -->

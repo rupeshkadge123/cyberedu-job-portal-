@@ -77,14 +77,14 @@
 		rd.forward(request, response);
 		}
 	%>
-	<div class="wrapper">
+	
   <header class="main-header">
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>C</b>D</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>CyberDroid</span>
+      <span class="logo-lg">CyberDroid</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -136,75 +136,10 @@
       </div>
     </nav>
   </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- Sidebar user panel -->
-     
-      <!-- search form -->
-    
-      <!-- /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-        
-        
-
-        <li class="treeview"><a href="stuProfile.jsp"> <i
-      class="fa  fa-edit "></i><span> Profile</span> <span
-            class="pull-right-container"> <i
-              class="fa fa-angle-left pull-right"></i>
-          </span>
-        </a>
-          <ul class="treeview-menu">
-            <li><a href="stuProfile.jsp"><i class="fa fa-user"></i>
-                Personal</a></li>
-            <li><a href="stueducational.jsp"><i class="fa fa-mortar-board "></i>
-                Educational</a></li>
-            <li><a href="stuexperience.jsp"><i class="fa fa-paper-plane-o"></i>
-                Exprience</a></li>
-            <li><a href="stuProfile.jsp"><i
-                class="fa  fa-book "></i> Cources</a></li>
-            <li><a href="stuproject.jsp"><i
-                class="fa fa-folder-open-o"></i> Projects</a></li>
-            <li><a href="stuProfile.jsp"><i
-                class="fa  fa-university"></i> Skills</a></li>
-            <li><a href="stuProfile.jsp"><i class="fa  fa-university"></i>
-                Resume</a></li>
-          </ul></li>
-        <li class="treeview"><a href="stuJob.jsp"> <i
-            class="fa fa-briefcase"></i> <span>Jobs</span> <i
-            class="fa fa-angle-left pull-right"></i>
-        </a>
-          <ul class="treeview-menu">
-            <li><a href="stuJob.jsp"><i
-                class="fa fa-circle-o"></i> Listed jobs</a></li>
-            <li><a href="stuJobApplied.jsp"><i
-                class="fa fa-circle-o"></i> Applied Job</a></li>
-            <li><a href="stuJobCallLetter.jsp"><i
-                class="fa fa-circle-o"></i> Call Letter</a></li>
-            <li><a href="stuJobRecruters.jsp"><i
-                class="fa fa-circle-o"></i> Recruiters</a></li>
-          </ul></li>
-        <li class="treeview">
-          <a href="#"> 
-            <i  class="fa  fa-envelope"></i> <span>Messages</span> 
-            <i class="fa fa-angle-left pull-right"></i>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="pages/UI/general.html">
-              <i class="fa fa-circle-o"></i> Admin</a></li>
-            <li><a href="pages/UI/icons.html">
-              <i class="fa fa-circle-o"></i> Listed jobs</a></li>
-            <li><a href="pages/UI/buttons.html">
-              <i class="fa fa-circle-o"></i> Company Messages</a></li>
-          </ul>
-        </li>
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
+  
+ 
+ 
+  
 
 
   <!-- /.content-wrapper -->
@@ -219,5 +154,3 @@
 <!-- ./wrapper -->
 
 
-</body>
-</html>

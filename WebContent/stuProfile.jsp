@@ -3,17 +3,17 @@
 <head>
 <%@include file="header.jsp"%>
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
 
 <!-- jQuery library -->
-<script
+<!-- <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- Latest compiled JavaScript -->
+Latest compiled JavaScript
 <script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
 <!--  -->
+
 </head>
 <body>
 	<div class="content-wrapper">
@@ -61,7 +61,7 @@
 														<span class="input-group-btn">
 															<button type="button" class="btn btn-default">Mr</button>
 															<button type="button"
-																class="btn btn-default dropdown-toggle"
+																class="btn btn-default dropdown-toggle "
 																data-toggle="dropdown">
 																<span class="caret"></span> <span class="sr-only">Toggle
 																	Dropdown</span>

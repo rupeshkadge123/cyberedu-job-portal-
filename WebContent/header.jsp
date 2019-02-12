@@ -119,7 +119,7 @@
              
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="stuProfile.jsp" class="btn btn-default btn-flat">Profile</a>
                 </div>
                  <form action="logout" method="post">
                 <div class="pull-right">

@@ -10,9 +10,6 @@
 				<ul class="nav nav-tabs">
 					<li><a href="admListedCompany.jsp">listed job</a></li>
 			<li class="active"><a href="admOccupied.jsp">Applied job</a></li>
-		
-
-
 				</ul>
 				<div class="tab-pane" id="tab_2">
 					<div class="tab-content">

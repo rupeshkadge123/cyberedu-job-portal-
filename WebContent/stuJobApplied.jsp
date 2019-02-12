@@ -26,7 +26,8 @@
 								<sql:query dataSource="${webappDataSource}" var="result">
 						select stu.firstname,stu.lastname,stu.email,ap.cname,ap.appliedjobid,
 						ap.jtitle,ap.experience,ap.skill
-                        FROM cyberedu.studregistration stu , cyberedu.appliedjob ap where stu.userid=<%=useridheder%> and ap.userid =<%=useridheder%>;
+                        FROM cyberedu.studregistration stu , cyberedu.appliedjob ap where 
+                        stu.userid=<%=useridheder%> and ap.userid =<%=useridheder%>;
 				          		</sql:query>
 									<form action="StuAppliedJobde" method="post">
 								<div class="box-body">

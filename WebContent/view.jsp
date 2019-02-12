@@ -291,19 +291,14 @@
 							</script>
 
 						</div>
-						<!-- /.tab-pane -->
+						<!-- /.tab-pane active -->
 					</div>
-
-
-
-
-
-
+							<!-- tab-content -->
 				</div>
-				<!-- /.tab-content -->
+				<!-- tab-pane -->
 			</div>
 			<!-- nav-tabs-custom -->
-		</div>
-	</div>
-</div>
+		</div><!-- row col-md-12 -->
+	</div><!-- container -->
+</div><!-- content-wrapper -->
 <%@include file="Stufooter.jsp"%>

@@ -54,7 +54,7 @@
 					<ul class="treeview-menu">
 						<li><a href="admMail.jsp"><i class="fa fa-circle-o"></i>
 								inbox</a></li>
-						<li><a href="admMailCompose.jsp"><i
+						<li><a href="admcompose.jsp"><i
 								class="fa fa-circle-o"></i> compose</a></li>
 
 						<li><a href="admMailRead.jsp"><i class="fa fa-circle-o"></i>
